@@ -1,0 +1,26 @@
+<% include ./Partials/header.ejs %>
+
+<div class="register-container">
+    <h1>Create new Account</h1>
+      <p>Please fill in the following details to create your account</p>
+    <form class="register-form" action="/register" method="post">
+      <div class="input-group">
+        <input type="text" id="name" name="name" placeholder="Name" required>
+      </div>
+      <div class="input-group">
+        <input type="email" id="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="input-group">
+        <input type="text" id="username" name="username" placeholder="Username" required>
+      </div>
+      <div class="input-group">
+        <input type="password" id="password" name="password" placeholder="Password" required>
+      </div>
+      <button type="submit">Sign Up</button>
+      <div class="bottom-text">
+        <p>Already have an account? <a href='/login'>Login</a></p>
+      </div>
+    </form>
+</div>
+
+<% include ./Partials/footer.ejs %>

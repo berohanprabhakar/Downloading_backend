@@ -1,0 +1,15 @@
+<% include ./Partials/header.ejs %>
+
+
+<div class="div">
+    <% user.posts.forEach(function(elem){ %>
+        <div class="card"></div>
+        <img src="post-image.jpg" alt="Post Image">
+    <h2>Post Title</h2>
+</div>
+    <% }) %>
+    
+</div>
+  
+
+  <% include ./Partials/footer.ejs %>

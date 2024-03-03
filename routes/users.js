@@ -4,6 +4,7 @@ const plm = require('passport-local-mongoose');
 mongoose.connect("mongodb://127.0.0.1:27017/Downloading_app_DB");
 // Define user schema
 const UserSchema = new mongoose.Schema({
+  name: String,
   username: String,
   password: String,
   posts: [{
@@ -15,10 +16,8 @@ const UserSchema = new mongoose.Schema({
   },
   email: {
     type: String
-  },
-  name: {
-    type: String
   }
+  
 });
 
 UserSchema.plugin(plm);

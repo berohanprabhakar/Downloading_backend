@@ -1,6 +1,6 @@
 <% include ./Partials/header.ejs %>
 <div class="profile-card">
-    <form id="uploadform" hidden action="/fileupload" method="post" enctype="multipart/form-data">
+    <form id="uploadform" hidden action="/uploaddp" method="post" enctype="multipart/form-data">
         <input type="file" name="image">
     </form>
         <div id="uploaddp" class="image">
@@ -9,13 +9,14 @@
    
 
     <div class="text-data">
-      <span class="name">Mohamed Yousef</span>
+      <span class="username"> @<%= user.username %> </span>
       <span class="job">News Editor & Developer & Blogger
 </span>
     </div>
 
     <div class="buttons">
       <a href="/uploadapp" class="button">Publish App</a>
+      <a href="/logout" class="button">Logout</a>
 
     </div>
   </div>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed</title>
+    <!-- Include Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Your HTML content here -->
+    <div class="w-full min-h-screen bg-gray-800 px-8 py-8 text-white">
+        <div class="cards flex flex-wrap gap-5">
+            <% posts.forEach(function(elem){ %> 
+                <div class="card w-50 h-50">
+                    <div class="w-full h-56 bg-sky-200 rounded-lg overflow-hidden">
+                        <img src="/APK_all/apkdp/<%= elem.appDp%>" alt="" class="object-cover w-full h-full">
+                    </div>
+                    <h5 class="mt-2 text-bold text-white font-bold"><%= elem.appTitle%></h5>
+                    <h2 class="mt-2 text-s text-white font-normal"><%= elem.user.username %></h2>
+                    <!-- Adding font-semibold for semi-bold text -->
+                </div>
+            <% }) %>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

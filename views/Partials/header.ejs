@@ -9,9 +9,49 @@
   <link rel="stylesheet" href="/stylesheets/login.css">
   <link rel="stylesheet" href="/stylesheets/profile.css" />
   <link rel="stylesheet" href="/stylesheets/uploadapp.css" />
+
   <link rel="stylesheet" href="/stylesheets/allpost.css" />
+  <link rel="stylesheet" href="/stylesheets/index.css">
   
 
   
 </head>
 <body>
+
+  <% if(nav === true){ %>
+  <style>
+    .navbar {
+        background-color: #333; /* Background color of the navbar */
+        padding: 10px 20px; /* Padding around the navbar */
+    }
+
+    .nav-list {
+        list-style-type: none; /* Remove bullet points from the list */
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+    }
+
+    .nav-list li {
+        display: inline; /* Display list items horizontally */
+    }
+
+    .nav-list li a {
+        color: #fff; /* Text color of the links */
+        text-decoration: none; /* Remove underline from links */
+        padding: 10px 20px; /* Padding around the links */
+    }
+
+    .nav-list li a:hover {
+        background-color: #555; /* Background color of the links on hover */
+    }
+</style>
+</head>
+<nav class="navbar">
+    <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<% } %>

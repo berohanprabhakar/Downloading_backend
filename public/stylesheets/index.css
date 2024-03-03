@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Kanit", sans-serif !important;
+    color: #772e2e;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    color: #772e2e;
+    background-image: url(https://ptiggick.sirv.com/codepen%20img/griddy%20bg.webp);
+    background-size: cover;
+    background-position: 50% 25%;
+  }
+  
+  section {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, rgba(192, 192, 192, 0.4) 85%);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  section > div {
+    border: 1px rgba(117, 117, 117, 0.25) dotted;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(1, 0.81, 0, 0.26);
+  }
+  section > div:hover {
+    -webkit-backdrop-filter: sepia(0.4);
+    -moz-backdrop-filter: sepia(0.4);
+    backdrop-filter: sepia(0.4);
+  }
+  section > div h2 {
+    font-size: clamp(10.5em, 25vw, 25.5em);
+    cursor: default;
+  }
+  section .div1 {
+    grid-area: 1/1/2/2;
+  }
+  section .div2 {
+    grid-area: 1/2/2/3;
+  }
+  section .div3 {
+    grid-area: 1/3/2/4;
+  }
+  section .div4 {
+    grid-area: 1/4/2/5;
+  }
+  section .div5 {
+    grid-area: 1/5/2/6;
+  }
+  section .div6 {
+    grid-area: 1/6/2/7;
+  }
+  section .div7 {
+    grid-area: 1/7/2/8;
+  }
+  section .div8 {
+    grid-area: 2/1/3/2;
+  }
+  section .div9 {
+    grid-area: 2/2/3/3;
+  }
+  section .div9 h2 {
+    padding-bottom: 6.5rem;
+    padding-left: 6.5rem;
+  }
+  section .div10 {
+    grid-area: 2/3/3/4;
+  }
+  section .div10 h2 {
+    padding-bottom: 5.5rem;
+    padding-right: 5.5rem;
+  }
+  section .div11 {
+    grid-area: 2/4/3/5;
+  }
+  section .div12 {
+    grid-area: 2/5/3/6;
+  }
+  section .div13 {
+    grid-area: 2/6/3/7;
+  }
+  section .div14 {
+    grid-area: 2/7/3/8;
+  }
+  section .div15 {
+    grid-area: 3/1/4/3;
+    position: relative;
+    background: rgba(79, 39, 39, 0.2);
+    -webkit-backdrop-filter: blur(1.5px);
+    -moz-backdrop-filter: blur(1.5px);
+    backdrop-filter: blur(1.5px);
+  }
+  section .div15 p {
+    position: absolute;
+  }
+  section .div16 {
+    grid-area: 3/2/4/3;
+  }
+  section .div17 {
+    grid-area: 3/3/4/4;
+  }
+  section .div17 h2 {
+    padding-bottom: 4.5rem;
+    padding-left: 4.5rem;
+  }
+  section .div18 {
+    grid-area: 3/4/4/5;
+  }
+  section .div18 h2 {
+    padding-bottom: 3.5rem;
+    padding-right: 4.5rem;
+  }
+  section .div19 {
+    grid-area: 3/5/4/6;
+  }
+  section .div20 {
+    grid-area: 3/6/4/7;
+  }
+  section .div21 {
+    grid-area: 3/7/4/8;
+  }
+  section .div22 {
+    grid-area: 4/1/5/2;
+  }
+  section .div23 {
+    grid-area: 4/2/5/3;
+  }
+  section .div24 {
+    grid-area: 4/3/5/4;
+  }
+  section .div25 {
+    grid-area: 4/4/5/5;
+  }
+  section .div25 h2 {
+    padding-bottom: 2.5rem;
+    padding-left: 3.5rem;
+  }
+  section .div26 {
+    grid-area: 4/5/5/6;
+  }
+  section .div26 h2 {
+    padding-bottom: -1.5rem;
+    padding-right: 3.5rem;
+  }
+  section .div27 {
+    grid-area: 4/6/5/7;
+  }
+  section .div28 {
+    grid-area: 4/7/5/8;
+  }
+  section .div29 {
+    grid-area: 5/1/6/2;
+  }
+  section .div30 {
+    grid-area: 5/2/6/3;
+  }
+  section .div31 {
+    grid-area: 5/3/6/4;
+  }
+  section .div32 {
+    grid-area: 5/4/6/5;
+  }
+  section .div33 {
+    grid-area: 5/5/6/6;
+  }
+  section .div34 {
+    grid-area: 5/6/6/7;
+  }
+  section .div35 {
+    grid-area: 5/7/6/8;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .center p {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+  }
+  .center p a {
+    font-size: clamp(15px, 5vw, 18px);
+  }
+  
+  .trig {
+    will-change: contents;
+  }
+  .trig:hover .nav {
+    transform: rotate(-30deg);
+  }
+  .trig .nav {
+    width: 10rem;
+    transition: all 1s ease;
+  }
+  
+  .fl-fl {
+    background: #772e2e;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 190px;
+    position: fixed;
+    right: -160px;
+    z-index: 1000;
+    font: normal normal 10px Arial !important;
+    transition: all 0.25s ease;
+    will-change: contents;
+  }
+  
+  .fa {
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 0;
+    width: 40px;
+    margin-left: 8px;
+  }
+  
+  .fl-fl:hover {
+    right: 0;
+  }
+  
+  .fl-fl a {
+    color: #fff !important;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px !important;
+  }
+  
+  .float-fb {
+    top: 160px;
+  }
+  
+  .float-tw {
+    top: 215px;
+  }
+  
+  .float-ig {
+    top: 270px;
+  }
+  
+  .float-pn {
+    top: 325px;
+  }
+  
+  @media screen and (max-width: 35rem) {
+    section {
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
+  }
+  @media screen and (max-width: 56.25rem) {
+    section .center h2 {
+      padding-inline: unset;
+    }
+  }

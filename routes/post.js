@@ -20,6 +20,11 @@ appDescription: {
 apkFile: String,
 appDp: String,
 appImage: [String],
+appCategory: {
+  type: String,
+  enum: ['Game', 'App', 'Tools'], // Predefined categories
+  default: 'App' // Default category
+},
 
 createdAt:{
     type: Date,

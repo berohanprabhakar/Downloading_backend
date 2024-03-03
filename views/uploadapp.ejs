@@ -9,14 +9,23 @@
         <label for="appDescription">App Description:</label>
         <textarea id="appDescription" name="appDescription" rows="4" required></textarea>
 
-        <label for="appImage">App Images:</label>
-        <input type="file" id="appImage" name="appImage" accept="image/*" multiple required>
 
         <label for="appDp">App Display Picture (DP):</label>
         <input type="file" id="appDp" name="appDp" accept="image/*" required>
 
+        
+        <label for="appImage">App Images:</label>
+        <input type="file" id="appImage" name="appImage" accept="image/*" multiple required>
+
         <label for="apkFile">APK File:</label>
         <input type="file" id="apkFile" name="apkFile" accept=".apk" required>
+        
+        <label for="appCategory">App Category:</label>
+        <select id="appCategory" name="appCategory" required>
+            <option value="Game">Game</option>
+            <option value="App">App</option>
+            <option value="Tools">Tools</option>
+        </select>
 
         <button type="submit">Upload APK</button>
     </form>

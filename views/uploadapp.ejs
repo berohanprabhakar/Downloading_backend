@@ -2,18 +2,18 @@
 
 <div class="container">
     <h1>APK Upload Form</h1>
-    <form action="/uploadapp" method="post" enctype="multipart/form-data">
+    <form action="/uploadapp" method="POST" enctype="multipart/form-data">
         <label for="appTitle">App Title:</label>
         <input type="text" id="appTitle" name="appTitle" required>
 
         <label for="appDescription">App Description:</label>
         <textarea id="appDescription" name="appDescription" rows="4" required></textarea>
 
-        <!-- <label for="appImages">App Images:</label>
-        <input type="file" id="appImages" name="appImages" accept="image/*" multiple required>
+        <label for="appImage">App Images:</label>
+        <input type="file" id="appImage" name="appImage" accept="image/*" multiple required>
 
         <label for="appDp">App Display Picture (DP):</label>
-        <input type="file" id="appDp" name="appDp" accept="image/*" required> -->
+        <input type="file" id="appDp" name="appDp" accept="image/*" required>
 
         <label for="apkFile">APK File:</label>
         <input type="file" id="apkFile" name="apkFile" accept=".apk" required>

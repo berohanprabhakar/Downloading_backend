@@ -1,10 +1,10 @@
 <% include ./Partials/header.ejs %>
 <div class="profile-card">
     <form id="uploadform" hidden action="/uploaddp" method="post" enctype="multipart/form-data">
-        <input type="file" name="image">
+        <input type="file" name="userdp">
     </form>
         <div id="uploaddp" class="image">
-         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxivAs4UknzmDfLBXGMxQkayiZDhR2ftB4jcIV7LEnIEStiUyMygioZnbLXCAND-I_xWQpVp0jv-dv9NVNbuKn4sNpXYtLIJk2-IOdWQNpC2Ldapnljifu0pnQqAWU848Ja4lT9ugQex-nwECEh3a96GXwiRXlnGEE6FFF_tKm66IGe3fzmLaVIoNL/s1600/img_avatar.png" alt="" class="profile-img" />
+         <img src="./public/dpuploads/<%= user.profilePic %>" alt=" class="profile-img" />
         </div>
    
 
